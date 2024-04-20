@@ -1,0 +1,108 @@
+
+body {
+    background-color: rgb(33 29 29 / 5%) !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "My Font";
+    src: url(../fonts/Mogra-Regular.ttf);
+}
+
+/*header*/
+.header {
+    padding: 10px;
+}
+
+/*search-item input*/
+.search-item input {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: transparent;
+}
+
+/*logo imgt*/
+.logo img {
+    width: 100px;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(4%) saturate(7500%) hue-rotate(243deg) brightness(92%) contrast(104%);
+    animation: 20s infinite change;
+}
+
+@keyframes change {
+    0%   {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(159deg) brightness(91%) contrast(101%);}
+    10%  {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(259deg) brightness(91%) contrast(101%);}
+    20%  {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(319deg) brightness(91%) contrast(101%);}
+    30% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(419deg) brightness(91%) contrast(101%);}
+    40% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(549deg) brightness(91%) contrast(101%);}
+    50% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(689deg) brightness(91%) contrast(101%);}
+    60% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(779deg) brightness(91%) contrast(101%);}
+    70% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(859deg) brightness(91%) contrast(101%);}
+    80% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(899deg) brightness(91%) contrast(101%);}
+    90% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(1149deg) brightness(91%) contrast(101%);}
+    100% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(1222deg) brightness(91%) contrast(101%);}
+    
+}
+
+
+.logo h1 {
+    font-family: "My Font";
+    font-size: 45px;
+}
+
+
+.logo-png {
+    filter:invert(55%) sepia(162%) saturate(3371%) hue-rotate(-647deg) brightness(41%) contrast(225%);
+
+}
+
+.line {
+       height: 1px;
+       background-color: lightgray;
+       border-radius: 10px;
+}
+
+
+/*account*/
+.account {
+    gap: 30px;
+}
+
+.account a {
+    text-decoration: none;
+    font-family: "inter";
+    font-weight: bold;
+    color: #453939;
+}
+
+.nav-container {
+    margin-top: 15px;
+}
+
+.navbar-1 {
+    display: ruby-text !important;
+    justify-content: center !important;
+}
+
+.nav-color {
+    color: black !important;
+}
+
+.slide {
+    width: 800px;
+    height: 500px;
+    margin: auto;
+}
+
+.sl-heig {
+    object-fit: cover;
+    height: min-content;
+}
