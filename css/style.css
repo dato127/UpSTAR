@@ -1,7 +1,9 @@
 
-body {
-    background-color: rgb(33 29 29 / 5%) !important;
-}
+ body {
+
+    animation: overflow 15s;
+ }
+
 
 p {
     margin: 0 !important;
@@ -66,7 +68,7 @@ p {
 
 .line {
        height: 1px;
-       background-color: lightgray;
+       background-color: lightslategrey;
        border-radius: 10px;
 }
 
@@ -92,17 +94,83 @@ p {
     justify-content: center !important;
 }
 
-.nav-color {
-    color: black !important;
-}
+
 
 .slide {
-    width: 800px;
-    height: 500px;
+    width: 900px;
+    height: 400px;
     margin: auto;
 }
 
-.sl-heig {
-    object-fit: cover;
-    height: min-content;
+.carousel-inner-style {
+    height: 100%;
+    border-radius: 12px;
+    border: 3px solid lightslategray;
 }
+
+
+
+.loading-page {
+    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+  }
+  
+  #svg {
+    height: 150px;
+    width: 150px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 4500;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  
+  .name-container {
+    height: 30px;
+    overflow: hidden;
+  }
+  
+  .logo-name {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+  }
+
+  .preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+  
+  .preload.loaded {
+    transition-delay: 5s;
+    transform: translate(100%);
+  }
+
+  @keyframes overflow {
+    0% {
+        overflow: hidden;
+    }
+  }
