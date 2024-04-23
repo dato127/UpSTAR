@@ -3,9 +3,6 @@ body {
 }
 
 
-p {
-  margin: 0 !important;
-}
 
 @font-face {
   font-family: "inter";
@@ -18,10 +15,27 @@ p {
 }
 
 
-/*header container*/
+p {
+  margin: 0 !important;
+}
+
+/*HEADER CONTAINER*/
 .header-container {
   background: #f2f2f2;
   border-radius: 0 0 50px 50px;
+}
+
+.div-vector {
+  position: absolute;
+  bottom: 160px;
+  width: 13%;
+  height: 30%;
+}
+
+
+.vector {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -36,15 +50,50 @@ p {
 }
 
 
-/*search-item input*/
-.search-item input {
-  width: 80%;
-  border: none;
-  border-bottom: 2px solid black;
-  outline: none;
-  background-color: transparent;
+
+/*search item*/
+.search-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
+/*search-item input*/
+.search-item input {
+  width: 100%;
+  height: 40px;
+  border-radius: 0 25px;
+  outline: none;
+  background-color: #f2f2f2;
+  padding: 0 50px 0 20px;
+  border: 2px solid black;
+}
+
+.search-item div {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 2px;
+  cursor: pointer;
+  width: 11%;
+  height: 91%;
+  border-radius: 0 24px 0 0;
+}
+
+.search-item div:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
 
 .name-web a {
   font-family: "My Font";
@@ -53,15 +102,11 @@ p {
 }
 
 
-.logo-png {
-  filter: invert(55%) sepia(162%) saturate(3371%) hue-rotate(-647deg) brightness(41%) contrast(225%);
-
-}
-
 .order,
 .user,
 .shopping {
-  padding: 3px 5px;
+  height: 40px;
+  padding: 5px 10px;
   gap: 10px;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.62);
@@ -69,7 +114,7 @@ p {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.6px);
   -webkit-backdrop-filter: blur(9.6px);
-  border: 1px solid rgba(255, 255, 255, 1);
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .order:hover {
@@ -88,6 +133,7 @@ p {
 
 
 
+
 /*account*/
 .account {
   gap: 30px;
@@ -100,8 +146,14 @@ p {
   color: #453939;
 }
 
+/*nav container*/
 .nav-container {
   margin-top: 15px;
+}
+
+
+.logo-png {
+  filter: invert(55%) sepia(162%) saturate(3371%) hue-rotate(-647deg) brightness(41%) contrast(225%);
 }
 
 .navbar-1 {
@@ -194,3 +246,5 @@ p {
 }
 
 /*End loading page*/
+
+/*END HEADER CONTAINER*/
