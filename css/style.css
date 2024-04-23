@@ -1,176 +1,196 @@
-
- body {
-
-    animation: overflow 15s;
- }
+body {
+  animation: overflow 15s;
+}
 
 
 p {
-    margin: 0 !important;
+  margin: 0 !important;
 }
 
 @font-face {
-    font-family: "inter";
-    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "inter";
+  src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 @font-face {
-    font-family: "My Font";
-    src: url(../fonts/Mogra-Regular.ttf);
+  font-family: "My Font";
+  src: url(../fonts/Lobster-Regular.ttf);
 }
 
-/*header*/
+
+/*header container*/
+.header-container {
+  background: #f2f2f2;
+  border-radius: 0 0 50px 50px;
+}
+
 .header {
-    padding: 10px;
+  /* From https://css.glass */
+  background: rgba(228, 205, 205, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 0 0 20px 20px;
+  border: 1px solid rgb(255 255 255);
 }
+
 
 /*search-item input*/
 .search-item input {
-    border: none;
-    border-bottom: 2px solid black;
-    outline: none;
-    background-color: transparent;
-}
-
-/*logo imgt*/
-.logo img {
-    width: 100px;
-    filter: brightness(0) saturate(100%) invert(0%) sepia(4%) saturate(7500%) hue-rotate(243deg) brightness(92%) contrast(104%);
-    animation: 20s infinite change;
-}
-
-@keyframes change {
-    0%   {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(159deg) brightness(91%) contrast(101%);}
-    10%  {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(259deg) brightness(91%) contrast(101%);}
-    20%  {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(319deg) brightness(91%) contrast(101%);}
-    30% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(419deg) brightness(91%) contrast(101%);}
-    40% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(549deg) brightness(91%) contrast(101%);}
-    50% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(689deg) brightness(91%) contrast(101%);}
-    60% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(779deg) brightness(91%) contrast(101%);}
-    70% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(859deg) brightness(91%) contrast(101%);}
-    80% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(899deg) brightness(91%) contrast(101%);}
-    90% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(1149deg) brightness(91%) contrast(101%);}
-    100% {filter:invert(55%) sepia(71%) saturate(3149%) hue-rotate(1222deg) brightness(91%) contrast(101%);}
-    
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: transparent;
 }
 
 
-.logo h1 {
-    font-family: "My Font";
-    font-size: 45px;
+.name-web a {
+  font-family: "My Font";
+  text-decoration: none;
+  color: #0f2027;
 }
 
 
 .logo-png {
-    filter:invert(55%) sepia(162%) saturate(3371%) hue-rotate(-647deg) brightness(41%) contrast(225%);
+  filter: invert(55%) sepia(162%) saturate(3371%) hue-rotate(-647deg) brightness(41%) contrast(225%);
 
 }
 
-.line {
-       height: 1px;
-       background-color: lightslategrey;
-       border-radius: 10px;
+.order,
+.user,
+.shopping {
+  padding: 3px 5px;
+  gap: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.62);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid rgba(255, 255, 255, 1);
 }
+
+.order:hover {
+  background: rgb(242 242 242 / 62%);
+}
+
+.user:hover {
+  background: rgb(242 242 242 / 62%);
+
+}
+
+.shopping:hover {
+  background: rgb(242 242 242 / 62%);
+
+}
+
 
 
 /*account*/
 .account {
-    gap: 30px;
+  gap: 30px;
 }
 
 .account a {
-    text-decoration: none;
-    font-family: "inter";
-    font-weight: bold;
-    color: #453939;
+  text-decoration: none;
+  font-family: "inter";
+  font-weight: bold;
+  color: #453939;
 }
 
 .nav-container {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .navbar-1 {
-    display: ruby-text !important;
-    justify-content: center !important;
+  display: ruby-text !important;
+  justify-content: center !important;
 }
 
 
 
+
+/*slide */
 .slide {
-    width: 900px;
-    height: 400px;
-    margin: auto;
+  width: 80%;
+  height: 400px;
+  margin: auto;
 }
 
 .carousel-inner-style {
-    height: 100%;
-    border-radius: 12px;
-    border: 3px solid lightslategray;
+  height: 100%;
+  border-radius: 12px;
+  border: 3px solid lightslategray;
 }
 
 
-
+/*loading page*/
 .loading-page {
-    background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-    color: #191654;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: #191654;
+}
+
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: white;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
   }
-  
-  #svg {
-    height: 150px;
-    width: 150px;
-    stroke: white;
-    fill-opacity: 0;
-    stroke-width: 3px;
-    stroke-dasharray: 4500;
-    animation: draw 8s ease;
+
+  100% {
+    stroke-dashoffset: 0;
   }
-  
-  @keyframes draw {
-    0% {
-      stroke-dashoffset: 4500;
-    }
-    100% {
-      stroke-dashoffset: 0;
-    }
-  }
-  
-  .name-container {
-    height: 30px;
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+.preload {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.preload.loaded {
+  transition-delay: 5s;
+  transform: translate(100%);
+}
+
+@keyframes overflow {
+  0% {
     overflow: hidden;
   }
-  
-  .logo-name {
-    color: #fff;
-    font-size: 20px;
-    letter-spacing: 12px;
-    text-transform: uppercase;
-    margin-left: 20px;
-    font-weight: bolder;
-  }
+}
 
-  .preload {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-  }
-  
-  .preload.loaded {
-    transition-delay: 5s;
-    transform: translate(100%);
-  }
-
-  @keyframes overflow {
-    0% {
-        overflow: hidden;
-    }
-  }
+/*End loading page*/
