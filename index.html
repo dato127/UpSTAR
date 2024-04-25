@@ -10,6 +10,16 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- 1. owl carousel min .css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- 2. owl carousel theme Min .css-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -29,141 +39,200 @@
   </div>
   <!-- End loading page-->
 
-  <!--header container-->
-  <div class="header-container pb-5 position-relative">
+  <!--container fluid-->
+  <div class="container-fluid d-flex align-items-center header">
 
-    <!--div vector-->
-    <div class="div-vector">
-      <img class="vector" src="galery/vector-left.png" alt="vector">
+    <!--search input-->
+    <div class="col search-item d-flex style-unstyle">
+      <input type="search" placeholder="ძებნა">
+      <div>
+        <img width="25px" height="25px" src="icon/search.png" alt="search-png">
+      </div>
+    </div>
+    <!-- End search input-->
+
+    <div class="product-catalog ms-5 ">
+      <img width="24px" height="24px" src="icon/catalog.png" alt="catalog">
     </div>
 
+    <!--logo-->
+    <div class="name-web d-flex col align-items-center justify-content-center">
+      <a href="#">
+        <h1>UpSTAR</h1>
+      </a>
+    </div>
+    <!--End logo-->
 
-    <!--container-->
-    <div class="container d-flex align-items-center header">
-
-      <!--search input-->
-      <div class="col search-item d-flex style-unstyle">
-        <input type="search" placeholder="Search">
-        <div>
-          <img width="25px" height="25px" src="icon/search.png" alt="search-png">
+    <!--account-->
+    <div class="account d-flex justify-content-end col ">
+      <!--order-->
+      <a href="#">
+        <div class="order d-flex align-items-center">
+          <img width="25px" height="25px" src="icon/order.png" alt="icon">
+          <p>შეკვეთები</p>
         </div>
-      </div>
-      <!-- End search input-->
+      </a>
+      <!--End order-->
 
-      <!--logo-->
-      <div class="name-web d-flex col align-items-center justify-content-center">
-        <a href="#">
-          <h1>UpSTAR</h1>
-        </a>
-      </div>
-      <!--End logo-->
-
-      <!--account-->
-      <div class="account d-flex justify-content-end col ">
-        <!--order-->
-        <a href="#">
-          <div class="order d-flex align-items-center">
-            <img width="25px" height="25px" src="icon/order.png" alt="icon">
-            <p>Orders</p>
-          </div>
-        </a>
-        <!--End order-->
-
-        <!--User-->
-        <a href="#">
-          <div class="user d-flex align-items-center">
-            <img width="25px" height="25px" src="icon/user.png" alt="icon">
-            <p>Sign In</p>
-          </div>
-        </a>
-        <!--End User-->
-
-        <!--Shopping-->
-        <a href="#">
-          <div class="shopping d-flex align-items-center">
-            <img width="25px" height="25px" src="icon/shopping-cart.png" alt="icon">
-            <p>Cart</p>
-          </div>
-        </a>
-        <!--Shopping-->
-      </div>
-      <!--account-->
-
-    </div>
-    <!--End container-->
-
-
-    <!--nav-->
-    <div class="container nav-container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-1">
-        <a class="navbar-brand" href="#"><img class="logo-png" width="150px" src="logo/logo.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav gap-5 border-bottom">
-            <li class="nav-item">
-              <a class="nav-link nav-color active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-color" href="#">Women's Fashion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-color" href="#">men's fashion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-color " href="#">Jewellery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-color" href="#">Watches & Clock</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-color" href="#">Shoess</a>
-            </li>
-          </ul>
+      <!--cart-->
+      <a href="#">
+        <div class="cart d-flex align-items-center">
+          <img width="25px" height="25px" src="icon/shopping-cart.png" alt="icon">
+          <p>კალათა</p>
         </div>
-      </nav>
-    </div>
-    <!--End nav-->
+      </a>
+      <!--End cart-->
 
-    <!--carusel -->
-    <div class="container mt-3 me-5">
-      <div class="carusel">
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-          <ul class="carousel-indicators list-unstyled">
-            <li data-bs-slide-to="0" data-bs-target="#carouselExampleAutoplaying" class="active"></li>
-            <li data-bs-slide-to="1" data-bs-target="#carouselExampleAutoplaying"></li>
-            <li data-bs-slide-to="2" data-bs-target="#carouselExampleAutoplaying"></li>
-          </ul>
-          <div class="carousel-inner carousel-inner-style">
-            <div class="carousel-item active">
-              <img src="galery/slide-pc-1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="galery/slide-pc-2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="galery/slide-pc-3.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          </button>
+      <!--User-->
+      <a href="#">
+        <div class="user d-flex align-items-center">
+          <img width="25px" height="25px" src="icon/user.png" alt="icon">
+          <p>შესვლა</p>
         </div>
-      </div>
+      </a>
+      <!--End User-->
+
     </div>
-    <!--carusel -->
+    <!--account-->
 
   </div>
-  <!--End header container-->
+  <!--End container-->
 
 
+  <!--nav-->
+  <div class="container nav-container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent navbar-1">
+      <a class="navbar-brand" href="#"><img class="logo-png" width="150px" src="logo/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+        <ul class="navbar-nav gap-5 border-bottom hover-nav">
+          <li class="nav-item">
+            <a class="nav-link nav-color active" href="#">მთავარი</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#">ქალი</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#">მამაკაცი</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#">ბავშვი</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#">ფეხსაცმელი</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color " href="#">სამკაული</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#">საათი</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-color" href="#">ფასდაკლება</a>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--End nav-->
+
+  <!--carusel -->
+  <div class="container mt-3">
+    <div class="carusel">
+      <div id="carouselExampleAutoplaying" class="carousel" data-bs-ride="carousel">
+        <ul class="carousel-indicators list-unstyled">
+          <li data-bs-slide-to="0" data-bs-target="#carouselExampleAutoplaying" class="active"></li>
+          <li data-bs-slide-to="1" data-bs-target="#carouselExampleAutoplaying"></li>
+          <li data-bs-slide-to="2" data-bs-target="#carouselExampleAutoplaying"></li>
+        </ul>
+        <div class="carousel-inner carousel-inner-style">
+          <div class="carousel-item active">
+            <img src="galery/Artboard 16.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="galery/Web bolo erteulebi geo.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="galery/Web Banner geo.webp" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!--carusel -->
+
+
+  <!--owl carousel-->
+  <div class="container mt-5">
+    <div class="owl-carousel owl-theme" id="owl-carousel">
+
+      <!--item-->
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img src="galery/ქალის.webp" alt="img" class="card-img-top">
+          <p>ქალი</p>
+        </div>
+      </div>
+      <!--End item-->
+
+      <!--item-->
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img src="galery/კაცის.jpg" alt="img" class="card-img-top">
+          <p>კაცი</p>
+        </div>
+      </div>
+      <!--End item-->
+
+      <!--item-->
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img src="galery/ბავშვის.webp" alt="img" class="card-img-top">
+          <p>ბავშვი</p>
+        </div>
+      </div>
+      <!--End item-->
+
+      <!--item-->
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img src="galery/სამკაულები.jpg" alt="img" class="card-img-top">
+          <p>სამკაული</p>
+        </div>
+      </div>
+      <!--End item-->
+
+      <!--item-->
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img src="galery/საათები.jpg" alt="img" class="card-img-top">
+          <p>საათი</p>
+        </div>
+      </div>
+      <!--End item-->
+
+      <!--item-->
+      <div class="item">
+        <div class="card border-0 shadow">
+          <img src="galery/ფეხსაცმელი.jpg" alt="img" class="card-img-top">
+          <p>ფეხსაცმელი</p>
+        </div>
+      </div>
+      <!--End item-->
+    </div>
+  </div>
 
 
 </body>
@@ -174,6 +243,37 @@
   crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="main.js"></script>
 <!--End loading page js-->
+
+<!--lets include cdn file-->
+
+<!-- 0. Jquery cdn-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- 1. owl carousel min .js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+  integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!--init owl carousel-->
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 3
+      },
+      1000: {
+        items: 4
+      }
+    }
+  })
+</script>
 
 
 </html>
